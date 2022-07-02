@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.linspace;
+})();
 })();
 </script>
 ```
@@ -117,6 +119,7 @@ var arr = linspace( 0, 100, 6 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 // Create arrays of varying lengths:
 var out = linspace( 0, 10, 10 );
@@ -132,6 +135,7 @@ console.log( out );
 out = linspace( 10, 0, 11 );
 console.log( out );
 
+})();
 })();
 </script>
 </body>
@@ -219,7 +223,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-linspace/main/LICENSE
 
-[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn/tree/umd
+[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn/tree/umd/tree/umd
 
 </section>
 
