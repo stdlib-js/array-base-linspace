@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/linspace"
-click B href "https://github.com/stdlib-js/array-base-linspace/tree/main"
-click C href "https://github.com/stdlib-js/array-base-linspace/tree/production"
-click D href "https://github.com/stdlib-js/array-base-linspace/tree/esm"
-click E href "https://github.com/stdlib-js/array-base-linspace/tree/deno"
-click F href "https://github.com/stdlib-js/array-base-linspace/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/linspace"
+%% click B href "https://github.com/stdlib-js/array-base-linspace/tree/main"
+%% click C href "https://github.com/stdlib-js/array-base-linspace/tree/production"
+%% click D href "https://github.com/stdlib-js/array-base-linspace/tree/esm"
+%% click E href "https://github.com/stdlib-js/array-base-linspace/tree/deno"
+%% click F href "https://github.com/stdlib-js/array-base-linspace/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/linspace
