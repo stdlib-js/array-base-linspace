@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@v0.1.0-esm/index.mjs';
 ```
 
 #### linspace( start, stop, length )
@@ -103,7 +103,7 @@ var arr = linspace( 0, 100, 6 );
 <body>
 <script type="module">
 
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@v0.1.0-esm/index.mjs';
 
 // Create arrays of varying lengths:
 var out = linspace( 0, 10, 10 );
