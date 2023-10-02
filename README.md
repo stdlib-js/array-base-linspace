@@ -35,19 +35,30 @@ limitations under the License.
 
 > Generate a linearly spaced numeric array.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-linspace
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-linspace/tags). For example,
-
-```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@v0.1.0-esm/index.mjs';
+var linspace = require( '@stdlib/array-base-linspace' );
 ```
 
 #### linspace( start, stop, length )
@@ -79,7 +90,7 @@ var arr = linspace( 0, 100, 6 );
     where `arr[1]` is only guaranteed to be approximately equal to `0.5`. If you desire more control over element precision, consider using [`roundn`][@stdlib/math/base/special/roundn]:
 
     ```javascript
-    import roundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@esm/index.mjs';
+    var roundn = require( '@stdlib/math-base-special-roundn' );
 
     // Create an array subject to floating-point rounding errors:
     var arr = linspace( 0, 1, 21 );
@@ -102,13 +113,8 @@ var arr = linspace( 0, 100, 6 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
 
 // Create arrays of varying lengths:
 var out = linspace( 0, 10, 10 );
@@ -123,10 +129,6 @@ console.log( out );
 // Create an array with decremented values:
 out = linspace( 10, 0, 11 );
 console.log( out );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -150,7 +152,7 @@ console.log( out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -180,8 +182,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-linspace.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-linspace
 
-[test-image]: https://github.com/stdlib-js/array-base-linspace/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/array-base-linspace/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/array-base-linspace/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-base-linspace/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-linspace/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-linspace?branch=main
@@ -210,7 +212,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-linspace/main/LICENSE
 
-[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn/tree/esm
+[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn
 
 </section>
 
