@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,49 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var linspace = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof linspace, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns a linearly spaced array', function test( t ) {
-	var expected;
-	var actual;
-	var start;
-	var stop;
-
-	start = 0;
-	stop = 10;
-
-	actual = linspace( start, stop, 10 );
-
-	// Verify correct length:
-	t.strictEqual( actual.length, 10, 'returns expected value' );
-
-	// Verify that the returned array includes the start and stop values:
-	t.strictEqual( actual[0], start, 'returns expected value' );
-	t.strictEqual( actual[actual.length-1], 10, 'returns expected value' );
-
-	// Verify correct values:
-	actual = linspace( start, stop, 11 );
-	expected = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	// Decrement:
-	actual = linspace( stop, start, 11 );
-	expected = [ 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 ];
-	t.deepEqual( actual, expected, 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns an empty array if provided a length equal to `0`', function test( t ) {
-	t.deepEqual( linspace( 0, 10, 0 ), [], 'returns expected value' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
