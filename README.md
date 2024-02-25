@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@v0.2.1-deno/mod.js';
 ```
 
 #### linspace( start, stop, length )
@@ -98,7 +98,7 @@ var arr = linspace( 0, 100, 6 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@v0.2.1-deno/mod.js';
 
 // Create arrays of varying lengths:
 var out = linspace( 0, 10, 10 );
